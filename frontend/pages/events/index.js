@@ -6,12 +6,9 @@ export default function EventsPage({ events }) {
   return (
     <Layout>
       <h1>Events</h1>
-      {console.log(events)}
       {events.data.length === 0 && <h3>No events to show</h3>}
       {events.data &&
-        events.data.map((evt) => (
-          <EventItem key={evt.attributes.id} evt={evt} />
-        ))}
+        events.data.map((evt) => <EventItem key={evt.id} evt={evt} />)}
     </Layout>
   );
 }
