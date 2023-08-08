@@ -4,7 +4,7 @@ import styles from "@/styles/Header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div classname={styles.logo}>
+      <div className={styles.logo}>
         <Link href="/" legacyBehavior>
           <a>DJ Events</a>
         </Link>
